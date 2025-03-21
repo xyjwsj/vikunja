@@ -100,6 +100,7 @@
         "timezone": "Aikavyöhyke",
         "overdueTasksRemindersTime": "Erääntyneiden tehtävien muistutus sähköpostin aika",
         "filterUsedOnOverview": "Tallennettu yleisnäkymä-sivulla käytetty suodatin",
+        "minimumPriority": "Minimum visible task priority",
         "externalUserNameChange": "Nimeäsi hallinnoi kirjautumisoperaattori ({provider}). Muuttaaksesi sen, päivitä se siellä."
       },
       "totp": {
@@ -136,7 +137,8 @@
         "upload": "Lataa",
         "uploadAvatar": "Lataa Profiilikuva",
         "statusUpdateSuccess": "Profiilikuvan tila päivitettiin onnistuneesti!",
-        "setSuccess": "Profiilikuva on asetettu onnistuneesti!"
+        "setSuccess": "Profiilikuva on asetettu onnistuneesti!",
+        "ldap": "Your avatar is automagically synced from your organization's directory service (LDAP). You can ask your IT team for information on how to change it."
       },
       "quickAddMagic": {
         "title": "Quick Add Magic Mode",

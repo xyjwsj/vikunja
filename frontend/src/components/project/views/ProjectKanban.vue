@@ -529,8 +529,12 @@ async function updateTaskPosition(e) {
 				projectId: project.value.id,
 			}))
 			Object.assign(newTask, updatedTaskBucket.task)
+			newTask.bucketId = updatedTaskBucket.bucketId
 			if (updatedTaskBucket.bucketId !== newTask.bucketId) {
 				kanbanStore.moveTaskToBucket(newTask, updatedTaskBucket.bucketId)
+			}
+			if (updatedTaskBucket.bucket) {
+				kanbanStore.setBucketById(updatedTaskBucket.bucket, false)
 			}
 		}
 		kanbanStore.setTaskInBucket(newTask)
@@ -576,6 +580,11 @@ async function addTaskToBucket(bucketId: IBucket['id']) {
 	newTaskText.value = ''
 	kanbanStore.addTaskToBucket(task)
 	scrollTaskContainerToTop(bucketId)
+
+	const bucket = kanbanStore.getBucketById(bucketId)
+	if (bucket && bucket.limit && bucket.count >= bucket.limit) {
+		toggleShowNewTaskInput(bucketId)
+	}
 }
 
 function scrollTaskContainerToTop(bucketId: IBucket['id']) {

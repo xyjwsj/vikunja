@@ -100,6 +100,7 @@
         "timezone": "Time zone",
         "overdueTasksRemindersTime": "Forfaldne opgaver påmindelse e-mail tidspunkt",
         "filterUsedOnOverview": "Saved filter used on the overview page",
+        "minimumPriority": "Minimum visible task priority",
         "externalUserNameChange": "Your name is managed by your login provider ({provider}). To change it, please update it there instead."
       },
       "totp": {
@@ -136,7 +137,8 @@
         "upload": "Upload",
         "uploadAvatar": "Upload Profilbillede",
         "statusUpdateSuccess": "Profilbillede status blev opdateret!",
-        "setSuccess": "Profilbilledet er blevet indstillet!"
+        "setSuccess": "Profilbilledet er blevet indstillet!",
+        "ldap": "Your avatar is automagically synced from your organization's directory service (LDAP). You can ask your IT team for information on how to change it."
       },
       "quickAddMagic": {
         "title": "Hurtigtilføjelsemagi Tilstand",

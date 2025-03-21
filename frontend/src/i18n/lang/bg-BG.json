@@ -100,6 +100,7 @@
         "timezone": "Часова зона",
         "overdueTasksRemindersTime": "Час за напомняне за просрочени задачи",
         "filterUsedOnOverview": "Запазен филтър, използван на страницата за общ преглед",
+        "minimumPriority": "Minimum visible task priority",
         "externalUserNameChange": "Your name is managed by your login provider ({provider}). To change it, please update it there instead."
       },
       "totp": {
@@ -136,7 +137,8 @@
         "upload": "Качване",
         "uploadAvatar": "Качване на аватар",
         "statusUpdateSuccess": "Статусът на аватара беше успешно обновен!",
-        "setSuccess": "Аватарът беше успешно зададен!"
+        "setSuccess": "Аватарът беше успешно зададен!",
+        "ldap": "Your avatar is automagically synced from your organization's directory service (LDAP). You can ask your IT team for information on how to change it."
       },
       "quickAddMagic": {
         "title": "Бърз режим на добавяне",
