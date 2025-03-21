@@ -528,8 +528,13 @@ async function updateTaskPosition(e) {
 				projectViewId: props.viewId,
 				projectId: project.value.id,
 			}))
-			// Object.assign(newTask, updatedTaskBucket.task)
-			newTask = JSON.parse(JSON.stringify(updatedTaskBucket.task)) as ITask
+			const labels = newTask.labels
+			const assignees = newTask.assignees
+			console.log('********', updatedTaskBucket)
+			Object.assign(newTask, updatedTaskBucket.task)
+			// newTask = JSON.parse(JSON.stringify(updatedTaskBucket.task)) as ITask
+			newTask.labels = labels
+			newTask.assignees = assignees
 			newTask.bucketId = updatedTaskBucket.bucketId
 			if (updatedTaskBucket.bucketId !== newTask.bucketId) {
 				kanbanStore.moveTaskToBucket(newTask, updatedTaskBucket.bucketId)
