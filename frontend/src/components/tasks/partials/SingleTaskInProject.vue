@@ -161,7 +161,7 @@
 					:icon="['far', 'star']"
 				/>
 			</BaseButton>
-			<span class="bucket-title">{{ task.bucket.title }}</span>
+			<span class="bucket-title">{{ task.bucket?.title }}</span>
 			<slot />
 		</div>
 		<template v-if="typeof task.relatedTasks?.subtask !== 'undefined'">
